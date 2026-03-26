@@ -15,7 +15,7 @@ Before deploying, ensure you have the following tools installed and configured:
 - **Terraform** (v1.5+ recommended)
 - **Git** (for cloning repositories)
 
-Select your AWS region:
+1. Select your AWS region:
 ```bash
 export AWS_REGION=us-east-1
 2. Copy the Repository
