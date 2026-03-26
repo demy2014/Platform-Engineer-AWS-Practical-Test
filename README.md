@@ -21,6 +21,7 @@ export AWS_REGION=us-east-1
 
 **2. Copy the Repository**
 git clone gold-path
+
 cd golden-path/terraform
 
 **3. How to Run**
