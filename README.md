@@ -27,8 +27,11 @@ git clone gold-path
 cd golden-path/terraform
 
 **3. How to Run**
+
 terraform init
+
 terraform plan
+
 terraform apply
 
 **4. Deploy Application with Helm:**
