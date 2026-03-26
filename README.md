@@ -11,11 +11,10 @@
 
 ## Directions
 
-### Configure Prerequisites
+### 1. Configure Prerequisites
 
 Set up all required tools and choose the AWS region for deployment.
 
-**Example:**
 ```bash
 us-east-1
 
