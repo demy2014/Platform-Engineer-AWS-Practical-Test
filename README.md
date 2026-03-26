@@ -15,19 +15,24 @@ Before deploying, ensure you have the following tools installed and configured:
 - **Terraform** (v1.5+ recommended)
 - **Git** (for cloning repositories)
 ## Directions
+
 1. Select your AWS region:
 export AWS_REGION=us-east-1
 2. Copy the Repository
+   
 git clone gold-path
 cd golden-path/terraform
-3. How to Run
+
+4. How to Run
 terraform init
 terraform plan
 terraform apply
+
 Deploy Application with Helm:
 cd ../scripts
 ./deploy.sh
-4. IAM Roles of IRSA, DynamoDB Table, and S3 Bucket
+
+6. IAM Roles of IRSA, DynamoDB Table, and S3 Bucket
 
 This deployment includes:
 
@@ -38,14 +43,18 @@ S3 bucket for Terraform remote state
 kubectl get pods
 kubectl get svc
 kubectl get hpa
-6. Application Access
+
+7. Application Access
 
 The application will be available via the ALB URL created in your cluster:
 
 kubectl get svc -n default
+
 7. Why EKS?
+   
 Optimized for microservices & Kubernetes-native workloads
 Strong ecosystem: Ingress, External Secrets, IRSA
 Workloads are portable and easy to move across environments
-8. Notes
+
+9. Notes
 Ensure your AWS CLI is configured with the correct credentials.
