@@ -45,6 +45,7 @@ cd ../scripts
 This deployment includes:
 
 IAM Roles for IRSA (IAM Roles for Service Accounts)
+
 S3 bucket for Terraform remote state
 
 **6. Check All and Examine Pods**
