@@ -14,7 +14,7 @@ Before deploying, ensure you have the following tools installed and configured:
 - **kubectl** (for Kubernetes cluster management)
 - **Terraform** (v1.5+ recommended)
 - **Git** (for cloning repositories)
-
+## Directions
 1. Select your AWS region:
 export AWS_REGION=us-east-1
 2. Copy the Repository
