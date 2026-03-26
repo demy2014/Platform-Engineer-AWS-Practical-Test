@@ -1,19 +1,29 @@
 # Golden Path Provisioning
 
-## High-Level Architecture Diagram
-
+### Architecture
 <p align="center">
   <img width="641" height="406" alt="Architecture Diagram" src="https://github.com/user-attachments/assets/8fdef157-34fc-4c42-9aec-9783730d7627" />
 </p>
 
+**Workflow:**
+1. GitHub Actions → triggers deployment via Helm
+2. HPA → auto-scales pods based on load
+3. External Secrets → injects secrets securely
+4. IRSA → provides pods secure AWS access (no static keys)
+
 ---
 
-## **Directions**
+## Prerequisites
+Before deploying, ensure you have the following tools installed and configured:
 
-### **1. Configure Prerequisites**
-Set up all required tools and choose the AWS region for deployment:
+- **AWS CLI** (configured with credentials)
+- **kubectl** (for Kubernetes cluster management)
+- **Terraform** (v1.5+ recommended)
+- **Git** (for cloning repositories)
+
+Select your AWS region:
 ```bash
-us-east-1
+export AWS_REGION=us-east-1
 2. Copy the Repository
 git clone gold-path
 cd golden-path/terraform
