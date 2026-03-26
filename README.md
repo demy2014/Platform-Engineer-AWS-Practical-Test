@@ -71,5 +71,6 @@ Strong ecosystem: Ingress, External Secrets, IRSA
 Workloads are portable and easy to move across environments
 
 
-**9. Notes**
+**9. Notes:**
+
 Ensure your AWS CLI is configured with the correct credentials.
