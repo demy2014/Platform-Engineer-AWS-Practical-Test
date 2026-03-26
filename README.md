@@ -49,8 +49,11 @@ IAM Roles for IRSA (IAM Roles for Service Accounts)
 S3 bucket for Terraform remote state
 
 **6. Check All and Examine Pods**
+
 kubectl get pods
+
 kubectl get svc
+
 kubectl get hpa
 
 **7. Application Access**
