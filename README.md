@@ -10,47 +10,47 @@
 ## Prerequisites
 Before deploying, ensure you have the following tools installed and configured:
 
-- **AWS CLI** (configured with credentials)
+**AWS CLI** (configured with credentials)
 - **kubectl** (for Kubernetes cluster management)
 - **Terraform** (v1.5+ recommended)
 - **Git** (for cloning repositories)
 ## Directions
 
-1. - **Select your AWS region:**
+**1. Select your AWS region:**
 export AWS_REGION=us-east-1
-2. copy the Repository
+**2. Copy the Repository**
    
 git clone gold-path
 cd golden-path/terraform
 
-4. How to Run
+**3. How to Run**
 terraform init
 terraform plan
 terraform apply
 
-Deploy Application with Helm:
+**4. Deploy Application with Helm:**
 cd ../scripts
 ./deploy.sh
 
-6. IAM Roles of IRSA, DynamoDB Table, and S3 Bucket
+**5. IAM Roles of IRSA, DynamoDB Table, and S3 Bucket**
 
 This deployment includes:
 
 IAM Roles for IRSA (IAM Roles for Service Accounts)
 S3 bucket for Terraform remote state
 
-5. Check All and Examine Pods
+**6. Check All and Examine Pods**
 kubectl get pods
 kubectl get svc
 kubectl get hpa
 
-7. Application Access
+**7. Application Access**
 
 The application will be available via the ALB URL created in your cluster:
 
 kubectl get svc -n default
 
-7. Why EKS?
+**8. Why EKS?**
    
 Optimized for microservices & Kubernetes-native workloads
 Strong ecosystem: Ingress, External Secrets, IRSA
