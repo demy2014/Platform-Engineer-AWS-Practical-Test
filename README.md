@@ -20,6 +20,7 @@ Before deploying, ensure you have the following tools installed and configured:
 export AWS_REGION=us-east-1
 
 **2. Copy the Repository**
+
 git clone gold-path
 
 cd golden-path/terraform
