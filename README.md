@@ -1,6 +1,7 @@
 README.md
 High level Architecture Diagram 
- 
+ <img width="641" height="406" alt="Picture1" src="https://github.com/user-attachments/assets/8fdef157-34fc-4c42-9aec-9783730d7627" />
+
 Directions: 
 1. Configure the all prerequisites that needed and choose where you want to deploy in region of AWS.
 Example: us-east-1
