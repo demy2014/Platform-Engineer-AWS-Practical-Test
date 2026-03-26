@@ -1,43 +1,48 @@
+# Golden Path Provisioning
 
-# Golden Path Provsioning
-
-##  High-Level Architecture Diagram
+## High-Level Architecture Diagram
 
 <p align="center">
   <img width="641" height="406" alt="Architecture Diagram" src="https://github.com/user-attachments/assets/8fdef157-34fc-4c42-9aec-9783730d7627" />
 </p>
 
 ---
-Directions
-1. Configure Prerequisites
-Set up all required tools and choose the AWS region for deployment.
+
+## **Directions**
+
+### **1. Configure Prerequisites**
+Set up all required tools and choose the AWS region for deployment:
 ```bash
 us-east-1
 2. Copy the Repository
-```bash
 git clone gold-path
 cd golden-path/terraform
-3. How to run?
-```bash
+3. How to Run
 terraform init
 terraform plan
 terraform apply
-
+Deploy Application with Helm:
 cd ../scripts
 ./deploy.sh
-4. IAM Roles of IRSA DynamoDB table and S3 bucket for state CloudWatch dashboards
-```bash
-This will use the nginx Hello World software.
-The ALB will make it public.
-5. Check all and Examine pods:
-```bash
-kubectl get pods 
-kubectl get svc 
-kubectl get hpa
-7. Why EKS?
-```bash
-Better for microservices & Kubernetes-native workloads
-EKS handles microservices scaling smoothly.
-Strong ecosystem (Ingress, External Secrets, IRSA)
-Workloads move without hassle.
+4. IAM Roles of IRSA, DynamoDB Table, and S3 Bucket
 
+This deployment includes:
+
+IAM Roles for IRSA (IAM Roles for Service Accounts)
+S3 bucket for Terraform remote state
+
+5. Check All and Examine Pods
+kubectl get pods
+kubectl get svc
+kubectl get hpa
+6. Application Access
+
+The application will be available via the ALB URL created in your cluster:
+
+kubectl get svc -n default
+7. Why EKS?
+Optimized for microservices & Kubernetes-native workloads
+Strong ecosystem: Ingress, External Secrets, IRSA
+Workloads are portable and easy to move across environments
+8. Notes
+Ensure your AWS CLI is configured with the correct credentials.
