@@ -5,12 +5,6 @@
   <img width="641" height="406" alt="Architecture Diagram" src="https://github.com/user-attachments/assets/8fdef157-34fc-4c42-9aec-9783730d7627" />
 </p>
 
-**Workflow:**
-1. GitHub Actions → triggers deployment via Helm
-2. HPA → auto-scales pods based on load
-3. External Secrets → injects secrets securely
-4. IRSA → provides pods secure AWS access (no static keys)
-
 ---
 
 ## Prerequisites
