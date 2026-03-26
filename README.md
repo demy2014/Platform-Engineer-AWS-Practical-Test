@@ -35,7 +35,9 @@ terraform plan
 terraform apply
 
 **4. Deploy Application with Helm:**
+
 cd ../scripts
+
 ./deploy.sh
 
 **5. IAM Roles of IRSA, DynamoDB Table, and S3 Bucket**
