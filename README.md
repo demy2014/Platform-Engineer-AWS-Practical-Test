@@ -16,7 +16,6 @@ Before deploying, ensure you have the following tools installed and configured:
 - **Git** (for cloning repositories)
 
 1. Select your AWS region:
-```bash
 export AWS_REGION=us-east-1
 2. Copy the Repository
 git clone gold-path
