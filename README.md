@@ -17,7 +17,6 @@ Before deploying, ensure you have the following tools installed and configured:
 ## Directions
 
 **1. Select your AWS region:**
-```bash
 export AWS_REGION=us-east-1
 **2. Copy the Repository**
 ```bash
